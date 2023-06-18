@@ -5,22 +5,18 @@ const schema = mongoose.Schema({
     mot_de_passe : String,
     email : String,
     image : String,
+    couverture : String,
 
+    email_contact : String,
     ville : String,
     tele : String,
-    anniversaire : String,
-    genre : String,
-    email_contact : String,
-    
-    ville_partnership : Boolean,
-    tele_partnership : Boolean,
-    email_partnership : Boolean,
-    anniversaire_partnership : Boolean,
+    nom_universite  : String,
+    signe : String,
 
     verif_code : String,
     validation : Boolean,
     active: Boolean,
 })
 
-module.exports = mongoose.model('Etudiant' , schema)
+module.exports = mongoose.model('Club' , schema)
 
